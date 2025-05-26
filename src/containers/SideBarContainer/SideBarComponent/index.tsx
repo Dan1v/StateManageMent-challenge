@@ -7,14 +7,12 @@ interface ISideBarComponent {
   characterId: string;
   characterName?: string;
   speciesName?: string;
-  setIsVisible: (value: boolean) => void;
 }
 
 export default function SideBarComponent({
   characterName,
   speciesName,
   characterId,
-  setIsVisible,
 }: ISideBarComponent) {
   const { theme } = useThemeStore();
   const { setSelectedCharacterId } = useCharacterStore();
@@ -23,7 +21,6 @@ export default function SideBarComponent({
       className={styles.SideBarContainer}
       onClick={() => {
         setSelectedCharacterId(characterId);
-        setIsVisible(true);
       }}
     >
       <div className={`${styles.infoContainer}`}>

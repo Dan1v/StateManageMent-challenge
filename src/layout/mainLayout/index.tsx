@@ -2,12 +2,9 @@ import styles from "./index.module.scss";
 import { BodyContainer, SideBarContainer } from "../../containers";
 import { useThemeStore } from "../../stores/useThemeStore";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
 
 export default function MainLayout() {
   const { theme, toggleTheme } = useThemeStore();
-  // const [showBody, setShowBody] = React.useState(false);
 
   return (
     <div className={styles.mainContainer}>
@@ -34,7 +31,7 @@ export default function MainLayout() {
           className={`${styles.sideBarContainer}`}
           // style={{ display: showBody ? "none" : "block" }}
         >
-          <SideBarContainer setIsVisible={setShowBody} />
+          <SideBarContainer />
         </div>
         <div
           className={styles.bodyContainer}

@@ -20,10 +20,7 @@ export const GET_CHARACTERS = gql`
   }
 `;
 
-interface ISideBarContainer {
-  setIsVisible: (value: boolean) => void;
-}
-export default function SideBarContainer({ setIsVisible }: ISideBarContainer) {
+export default function SideBarContainer() {
   const { data, loading, error, fetchMore } = useQuery<CharactersData>(
     GET_CHARACTERS,
     {
@@ -90,7 +87,6 @@ export default function SideBarContainer({ setIsVisible }: ISideBarContainer) {
             characterId={item.id}
             characterName={item.name}
             speciesName={item.species}
-            setIsVisible={setIsVisible}
           />
         ))}
         {!loading && <LoadingComponent />}
