@@ -7,17 +7,12 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default function MainLayout() {
   const { theme, toggleTheme } = useThemeStore();
-  const [showBody, setShowBody] = React.useState(false);
+  // const [showBody, setShowBody] = React.useState(false);
 
   return (
     <div className={styles.mainContainer}>
       <div className={styles.navBarContainer}>
         <div className={styles.navBarbutton}>
-          {showBody && (
-            <button onClick={() => setShowBody(false)}>
-              <FaArrowLeft color="white" />
-            </button>
-          )}
           <h1>Ravn Rick & Morty Registry</h1>
         </div>
         <button
