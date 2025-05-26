@@ -1,0 +1,32 @@
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #0000001a;
+  padding-left: 16px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-right: 16px;
+  text {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 1.25%;
+    vertical-align: middle;
+    color: #828282;
+  }
+  p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 1.25%;
+    text-align: right;
+    vertical-align: middle;
+    color: #333333;
+  }
+  .HoverCardContent {
+    background: #000;
+  }
+}
