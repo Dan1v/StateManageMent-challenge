@@ -1,0 +1,17 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  padding: 16px;
+
+  p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 1.25%;
+    vertical-align: middle;
+    color: #0000004d;
+  }
+}

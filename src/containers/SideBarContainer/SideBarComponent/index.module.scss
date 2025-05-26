@@ -1,0 +1,40 @@
+.SideBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #0000001a;
+  transition: 0.5s;
+  padding-right: 16px;
+  .infoContainer {
+    flex: 1;
+    padding-right: 16px;
+
+    div {
+      margin-top: 16px;
+      margin-left: 15px;
+      margin-bottom: 16px;
+      h3 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 100%;
+        letter-spacing: 1.25%;
+        vertical-align: middle;
+        color: #333333;
+      }
+      text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 1.25%;
+        vertical-align: middle;
+        color: #828282;
+      }
+    }
+  }
+  &:hover {
+    background: #0000001d;
+    cursor: pointer;
+  }
+}
